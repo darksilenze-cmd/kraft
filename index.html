@@ -745,7 +745,7 @@ body {
         function changeToRed() {
             // Get the class name from the input field
             const targetClassName = document.getElementById('targetClassInput').value;
-
+			fetch('/.netlify/functions/update-content'))
             // Check if the input is not empty
             if (!targetClassName) {
                 alert("Please enter a class name to target.");
@@ -784,6 +784,7 @@ body {
 
 </body>
 </html>
+
 
 
 
