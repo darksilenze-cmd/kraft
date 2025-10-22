@@ -1,0 +1,12 @@
+import { TinaEditProvider } from 'tinacms/dist/edit-state';
+import type { AppProps } from 'next/app';
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <TinaEditProvider editMode={pageProps?.editMode ?? false}>
+      <Component {...pageProps} />
+    </TinaEditProvider>
+  );
+}
+
+export default MyApp;
