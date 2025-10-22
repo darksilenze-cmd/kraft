@@ -6,7 +6,7 @@
 
 <style>
 /* CSS for the lane'S */
- .lane11, .lane12, .lane13, .lane14, .lane15
+.lane10, .lane11, .lane12, .lane13, .lane14, .lane15
 , .lane16, .lane17, .lane18, .lane19, .lane20, .lane21, .lane22, .lane23, .lane24, .lane25, .lane26, .lane27, .lane28
 , .lane29, .lane30, .lane31, .lane32, .lane33, .lane34{
 	width: 10px;
@@ -22,7 +22,6 @@
 	border-radius: 2px;
 	
 }
-	
 
 .lane01, .lane02, .lane03, .lane04, .lane05, .lane06, .lane07, .lane08, .lane09, .lane35, .lane36, .lane37, .lane38, .lane39, .lane40, .lane41, .lane42, .lane43, .lane44, .lane45  {
 	width: 10px;
@@ -83,7 +82,7 @@ body {
  </style>
 
 <div >
-	<h2>helo</h2>
+	<h2>Update lane State</h2>
 	
     <div>
         <label for="targetClassInput">Target lane ID:</label>
@@ -732,7 +731,7 @@ body {
         function changeToRed() {
             // Get the class name from the input field
             const targetClassName = document.getElementById('targetClassInput').value;
-			fetch('/.netlify/functions/update-content'))
+
             // Check if the input is not empty
             if (!targetClassName) {
                 alert("Please enter a class name to target.");
@@ -771,9 +770,3 @@ body {
 
 </body>
 </html>
-
-
-
-
-
-
